@@ -133,6 +133,6 @@ historic_ladders <- merge(x = historic_ladders, y = historic_ladders_final,
 rm(historic_ladders_final)
 rm(swappedranks)
 
-write.csv(historic_ladders, file="historic_ladders.csv")
+write.csv(historic_ladders, file="output_files/historic_ladders.csv")
 
   

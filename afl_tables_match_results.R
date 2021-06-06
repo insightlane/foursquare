@@ -154,7 +154,7 @@ afl_tables_match_results <- merge(x = afl_tables_match_results, y = premiers,
 # 7. Add legend for FourSquare Tableau file at a season-team level
 # -----------------------------------------------------------------------------------------------
 
-afl_tables_match_results$Legend <- ifelse((afl_tables_match_results$Season == 2020), "2020 team",
+afl_tables_match_results$Legend <- ifelse((afl_tables_match_results$Season == 2021), "2021 team",
                            ifelse((afl_tables_match_results$Team1 == afl_tables_match_results$Premier), "Premier",
                                   ifelse((afl_tables_match_results$Team1 == afl_tables_match_results$Runnerup), "Runner-up",
                                          ifelse((afl_tables_match_results$Team1 == afl_tables_match_results$Last), "Wooden spoon",
@@ -166,7 +166,7 @@ afl_tables_match_results <- afl_tables_match_results[order(afl_tables_match_resu
 # 8. Write output file out to CSV format
 # -----------------------------------------------------------------------------------------------
 
-write.csv(afl_tables_match_results, file="output_files/afl_tables_match_results.csv")
+write.csv(afl_tables_match_results, file="C:/Local Code/insightlane/foursquare/output_files/afl_tables_match_results.csv")
 
 
 
